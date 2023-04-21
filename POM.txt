@@ -1,0 +1,31 @@
+POM:Page Object Model
+=====================
+It is a design pattern in which help you to maintain the code and code duplication which is a
+crucial thing in test automation.
+
+you can store all locators and respective method in the separate class and call them from the
+test in which you have to use,so the benifit from this will be if any changes in page then 
+you do not have to modify the test,simply modify the respective page and thats all.
+
+you can create a layer between your test and application pages,which you have to automate.
+
+In other word, it will behave as object repository where all locator are saves.
+..................................................................................
+implementation of page object model using Seleniam WebDriver
+=============================================================
+1.Page object model without pageFactory
+2.Page object model with PageFactory
+What is PageFactory in Selenium
+Ans:PageFactory in Selenium is an inbuilt extension of page object model but it is very optimized
+it is a class where we can use @FindBy annotation to find WebElement() and initElement() method to 
+initialize Web Element automatically.
+
+Syntax
+=======
+@FindBy(LocatorName="Attribute value")
+Access_modifiersName WebElement Element;
+
+Example
+=======
+@FindBy(xpath = "//b[normalize-space()='PIM']")
+	private WebElement clickPIM;
